@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" class="darkMode">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  <!-- style -->
+  <!-- <link rel="stylesheet" href="./css/font.css"> -->
+  <link rel="stylesheet" href="./css/style.min.css">
+  <!-- script -->
+  <script src="./js/app.js" defer></script>
+  <!-- title -->
+  <title>THE ACCOUNTANT V1.2.0</title>
+</head>
+
+<body>
+  <main class="main">
+    <nav class="nav">
+      <h1 class="logo">THE <span class="acc">ACCOUNTANT</span> <span class="version">V1.2.0</span></h1>
+      <div class="meunBar">
+        <svg version="1.1" id="infoBtn" class="infoBtn" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="45.999px"
+          height="45.999px" viewBox="0 0 45.999 45.999" xml:space="preserve">
+          <g>
+            <g>
+              <path d="M39.264,6.736c-8.982-8.981-23.545-8.982-32.528,0c-8.982,8.982-8.981,23.545,0,32.528c8.982,8.98,23.545,8.981,32.528,0
+          			C48.245,30.281,48.244,15.719,39.264,6.736z M25.999,33c0,1.657-1.343,3-3,3s-3-1.343-3-3V21c0-1.657,1.343-3,3-3s3,1.343,3,3V33z
+          			 M22.946,15.872c-1.728,0-2.88-1.224-2.844-2.735c-0.036-1.584,1.116-2.771,2.879-2.771c1.764,0,2.88,1.188,2.917,2.771
+          			C25.897,14.648,24.746,15.872,22.946,15.872z" />
+            </g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+        </svg>
+        <!-- actuv -->
+        <button class="exportBtn" id="EXPORT">Export</button>
+      </div>
+    </nav>
+    <section>
+      <header class="header">
+        <span class="date" id="dateSection">DD/MM/YYYY</span>
+        <span class="titleOfInput input-container">
+          <input id="titleInput" type="text" placeholder="العنوان" class="input-field ar">
+          <span class="ar icon">العنوان</span>
+        </span>
+      </header>
+      <div class="mainForm">
+        <label class="custom-field one add">
+          <input type="submit" id="add" value="إضافة" required />
+        </label>
+        <label class="custom-field one price">
+          <input type="text" id="priceInput" required />
+          <span class="placeholder"><span class="inputTextAr"> السعر</span></span>
+        </label>
+        <label class="custom-field one name">
+          <input type="text" id="nameInput" required />
+          <span class="placeholder"><span class="inputTextAr"> نوع البضاعة</span></span>
+        </label>
+        <label class="custom-field one size">
+          <input type="text" id="sizeInput" required />
+          <span class="placeholder"><span class="inputTextAr"> العدد</span></span>
+        </label>
+        <label class="custom-field one mu">
+          <input type="text" id="muInput" required />
+          <span class="placeholder T"><span class="inputTextAr"> الكم</span></span>
+        </label>
+      </div>
+      <div class="sectionTow">
+        <div class="sershBarAndTotle">
+          <div class="input-container searchDIV">
+            <input class="input-field" id="searchInput" type="search" placeholder="إبحث" name="search">
+            <img src="./img/search.svg" alt="Search" id="searchBtn" class="icon">
+          </div> 
+          <div class="totaleBar">
+            <span id="barTotale">0</span>
+            <select name="Prease" class="selecton" id="selecton">
+              <option value="DH">DH</option>
+              <option value="RY">RY</option>
+              <option value="FK">FK</option>
+              <option value="">............</option>
+            </select>
+            <h2 class="ar">المجموع</h2>
+          </div> 
+        </div>
+        <table>
+          <tbody id="htmlTable">
+            <tr class="trHeader">
+              <th style="width:16.6%" class="ar">المجموع</th>
+              <th style="width:8.3%" class="ar">الثمن</th>
+              <th style="width:54.04%" class="name ar">نوع البضاعة</th>
+              <th style="width:8.3%" class="ar">العدد</th>
+              <th style="width:4.16%" class="ar">الكم</th>
+              <th style="width:4.16%" class="ar">تعديل</th>
+              <th style="width:4.16%" class="ar">مسح</th>
+            </tr>
+            <!-- <tr>
+              <td data-th="المجموع">20,100</td>
+              <td data-th="الثمن">100</td>
+              <td data-th="نوع البضاعة" class="name ar">زيت 20 لتر</td>
+              <td data-th="العدد">201</td>
+              <td data-th="الكم">L</td>
+              <td data-th="تعديل"><img src="./img/edit.svg" width="20px" alt=""></td>
+              <td data-th="مسح"><img src="./img/delete.svg" width="20px" alt=""></td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

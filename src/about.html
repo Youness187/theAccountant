@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="./css/about.css">
+    <title>THE ACCOUNTANT -about-</title>
+</head>
+<body>
+  <main>
+    <h1 class="logo">THE <span class="acc">ACCOUNTANT</span> <span class="v">V1.2.0</span></h1>
+  <table>
+    <tr>
+      <td data-th="Name Prodact">THE ACCOUNTANT</td>
+      <td data-th="Version">1.2.0</td>
+      <td data-th="Author">Younesse El Moudne</td>
+      <td data-th="Electron"><span id="electron"></span></td>
+      <td data-th="Node.js"><span id="node"></span></td>
+      <td data-th="Chrome"><span id="chrome"></span></td>
+    </tr>
+  </table>
+  </main>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const replaceText = (selector, text) => {
+        const element = document.getElementById(selector)
+        if (element) element.innerText = text
+      }
+      for (const type of ["chrome", "node", "electron"]) {
+        replaceText(`${type}`, process.versions[type])
+      }
+    })
+  </script>
+</body>
+</html>

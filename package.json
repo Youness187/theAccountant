@@ -1,0 +1,18 @@
+{
+  "name": "the_accountant",
+  "version": "1.2.0",
+  "description": "This app for an accountant the stors, in morocco.",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "YOUNESSE EL-MOUDNE",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "11.0.3"
+  },
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "pdfmake": "^0.1.68"
+  }
+}
