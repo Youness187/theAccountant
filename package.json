@@ -9,7 +9,7 @@
   "author": "YOUNESSE EL-MOUDNE",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "22.3.25"
+    "electron": "39.8.4"
   },
   "dependencies": {
     "fs": "0.0.1-security",
